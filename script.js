@@ -25,6 +25,7 @@ function ShowBook() {
   p.innerHTML = output;
 
   //Remove Button
+  
   btnRemove.innerText = "Delete";
   btnRemove.addEventListener("click", function RemoveBook() {
     element.outerHTML = "";
