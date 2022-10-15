@@ -21,7 +21,7 @@ function ShowBook() {
   output = "";
   output += myLibrary[i].ShowContent() + "; ";
 
-  element.classList.add(`MyClass${i}`);
+  element.classList.add(`MyClass`);
   p.innerHTML = output;
 
   //Remove Button
@@ -43,7 +43,7 @@ function ShowBook() {
   element.append(p);
   element.append(btn);
   element.append(btnRemove);
-  document.querySelector(".container").append(element);
+  document.querySelector(".books-container").append(element);
 
   i++;
 }

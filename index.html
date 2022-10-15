@@ -10,14 +10,28 @@
 </head>
 <body>
     <div class="container">
-        <div class="main">
-            Title: <input type ="text" id = "title"><br/><br/>
-            Author:  <input type ="text" id = "author"><br/><br/>
-            Nr. Pages: <input type ="text" id = "pages"><br/><br/>
+    
+            <div class="sidebar">
+                <div class="inputs"> 
+                        <h3>What books have you read?
+                            
+                        </h3>
+
+            <input type ="text" placeholder="Book's Name" id = "title"><br/><br/>
+            <input type ="text" placeholder="Books'Author" id = "author"><br/><br/>
+            <input type ="number" placeholder="249" id = "pages"><br/><br/>
             <button class="new-book" onclick="addNewBook()">NEW BOOK</button>
+        </div>
+            </div>
+            <div class="books">
+                <h2>My Books</h2>
+                <div class="books-container">
+
+                </div>
+            </div>
             
            
-        </div>
+        
     </div>
     
 </body>
