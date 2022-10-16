@@ -8,7 +8,7 @@ function Book(title, author, pages) {
   this.author = author;
   this.pages = pages;
   this.ShowContent = function () {
-    return ` Book title: ${this.title} \n Author: ${this.author} \n Number of pages: ${this.pages}`;
+    return ` Book title: ${this.title}\n Author: ${this.author} \n Number of pages: ${this.pages}`;
   };
 }
 
@@ -21,18 +21,22 @@ function ShowBook() {
   output = "";
   output += myLibrary[i].ShowContent() + "; ";
 
-  element.classList.add(`MyClass`);
+  element.classList.add(`BookClass`);
   p.innerHTML = output;
 
   //Remove Button
-  
+  btnRemove.classList.add('btn-text');
+  btnRemove.classList.add('btn');
+  btnRemove.classList.add('btns');
   btnRemove.innerText = "Delete";
   btnRemove.addEventListener("click", function RemoveBook() {
     element.outerHTML = "";
   });
 
   //Read Button
-
+  btn.classList.add('btn-text');
+  btn.classList.add('btn');
+  btn.classList.add('btns');
   btn.innerText = "Not Read Yet";
   btn.addEventListener("click", function ReadClick() {
     btn.textContent = "Read";
