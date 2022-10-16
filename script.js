@@ -8,7 +8,7 @@ function Book(title, author, pages) {
   this.author = author;
   this.pages = pages;
   this.ShowContent = function () {
-    return ` Book title: ${this.title} Author: ${this.author}\nNumber of pages: ${this.pages}`;
+    return ` Book title: ${this.title}<br>Author: ${this.author}<br>Number of pages: ${this.pages} `
   };
 }
 
