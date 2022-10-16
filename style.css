@@ -90,27 +90,45 @@ input[type=text] {
   position: relative;
 }
 
-@media (min-width: 0px) and (max-width: 639px) {
+@media (min-width: 0px) and (max-width: 640px) {
+
     .books {
-        margin-left: 20px;
+        margin-left: -5px;
     }
   .books-container {
-    grid-template-columns: 1fr;
+    grid-template-columns: 120px;
   }
   .BookClass {
     height: 150px;
+    width: 170px;
+    padding: 10px;
   }
+
+  p {
+    font-size: 16px;
+  }
+
   .inputs {
-    display: grid;
-    
+    width: 8em;
+    height: 8em;
+ 
+  } 
+
+  input[type=number] {
+    width: 8em;
+    height: 1em;
   }
+
   .btn {
-    line-height: 20px;
-    height: 30px;
+    font-size: 13px;
+    line-height: 15px;
+    height: 20px;
     text-align: center;
-    width: 90px;
+    width: 80px;
     cursor: pointer;
   }
+
+ 
 }
 
 @media (min-width: 640px) and (max-width: 1000px) {
@@ -125,3 +143,4 @@ input[type=text] {
     cursor: pointer;
   }
 }
+
