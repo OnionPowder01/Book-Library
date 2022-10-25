@@ -3,13 +3,15 @@ let i = 0;
 
 //Constructor
 
-function Book(title, author, pages) {
+class Book {
+  constructor(title, author, pages) {
   this.title = title;
   this.author = author;
   this.pages = pages;
   this.ShowContent = function () {
     return ` Book title: ${this.title}<br>Author: ${this.author}<br>Number of pages: ${this.pages} `
   };
+}
 }
 
 function ShowBook() {
